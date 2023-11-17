@@ -65,8 +65,6 @@
     });
 
 
-    // Modal Video
-
     // Update the video source when the modal is opened
     $('#videoModal').on('show.bs.modal', function (e) {
         var videoSrc = $(e.relatedTarget).data('src');
