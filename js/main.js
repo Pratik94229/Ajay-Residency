@@ -66,6 +66,19 @@
 
 
     // Modal Video
+
+    // Update the video source when the modal is opened
+    $('#videoModal').on('show.bs.modal', function (e) {
+        var videoSrc = $(e.relatedTarget).data('src');
+        $('#videoModal iframe').attr('src', videoSrc);
+    });
+
+    // Pause the video when the modal is closed
+    $('#videoModal').on('hidden.bs.modal', function () {
+        $('#videoModal iframe').attr('src', '');
+    });
+
+    /*
     $(document).ready(function () {
         var $videoSrc;
         $('.btn-play').click(function () {
@@ -80,7 +93,7 @@
         $('#videoModal').on('hide.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc);
         })
-    });
+    });*/
 
 
     // Testimonials carousel

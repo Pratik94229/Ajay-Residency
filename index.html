@@ -481,7 +481,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="video">
-                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/cr2Rrl3vz9I" data-bs-target="#videoModal">
                             <span></span>
                         </button>
                     </div>
@@ -499,14 +499,27 @@
                     <div class="modal-body">
                         <!-- 16:9 aspect ratio -->
                         <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                                allow="autoplay"></iframe>
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always" allow="autoplay"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Video Start -->
+    <!-- Video end -->
+<!--
+<script>
+    // Update the video source when the modal is opened
+    $('#videoModal').on('show.bs.modal', function (e) {
+        var videoSrc = $(e.relatedTarget).data('src');
+        $('#videoModal iframe').attr('src', videoSrc);
+    });
+
+    // Pause the video when the modal is closed
+    $('#videoModal').on('hidden.bs.modal', function () {
+        $('#videoModal iframe').attr('src', '');
+    });
+</script> -->
+
 
 
         <!-- Service Start -->
