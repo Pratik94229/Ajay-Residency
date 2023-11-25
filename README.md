@@ -1,4 +1,6 @@
 # Ajay Residency Hotel Website
+![GitHub last commit](https://img.shields.io/github/last-commit/Pratik94229/Ajay-Residency)
+![GitHub license](https://img.shields.io/github/license/Pratik94229/Ajay-Residency)
 
 This repository contains the frontend codebase for the Ajay Residency Hotel website. The website is built using HTML, CSS, JavaScript, and Bootstrap to provide a user-friendly and visually appealing interface for the hotel's online presence.
 
